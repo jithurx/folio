@@ -1,4 +1,7 @@
 ---
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 import "@fontsource-variable/nunito";
 import "@fontsource-variable/nunito/wght-italic.css";
 
@@ -130,7 +133,7 @@ const bannerOffset =
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={siteUrl("rss.xml")}/>
 
 	</head>
-	<body class=" min-h-screen transition " class:list={[{"is-home": isHomePage, "enable-banner": enableBanner}]}
+	<body class=" min-h-screen transition " class:list={[{"is-home": isHomePage, "font-nunito": isHomePage, "enable-banner": enableBanner}]}
 		  data-overlayscrollbars-initialize
 	>
 		<ConfigCarrier></ConfigCarrier>
@@ -200,8 +203,8 @@ import { siteConfig } from '../config';
 // (async function() {
 // 	try {
 // 		await Promise.all([
-// 			document.fonts.load("400 1em 'Nunito Variable'"),
-// 			document.fonts.load("700 1em 'Nunito Variable'"),
+// 			document.fonts.load("400 1em Roboto"),
+// 			document.fonts.load("700 1em Roboto"),
 // 		]);
 // 		document.body.classList.remove("hidden");
 // 	} catch (error) {
@@ -394,8 +397,10 @@ const setup = () => {
 		const bodyElement = document.querySelector('body')
 		if (pathsEqual(visit.to.url, url('/'))) {
 			bodyElement!.classList.add('is-home');
+			bodyElement!.classList.add('font-nunito');
 		} else {
 			bodyElement!.classList.remove('is-home');
+			bodyElement!.classList.remove('font-nunito');
 		}
 
 		// increase the page height during page transition to prevent the scrolling animation from jumping
