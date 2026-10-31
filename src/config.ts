@@ -141,6 +141,6 @@ export const analyticsConfig: AnalyticsConfig = {
 
 // Deploy configuration (Netlify, GitHub Pages, Coludflared, etc)
 export const deployConfig: DeployConfig = {
-	siteUrl: "https://blogs.jithurx.dev",
-	baseUrl: "/folio",
+	siteUrl: "https://folio.jithurx.dev",
+	baseUrl: "/",
 };
