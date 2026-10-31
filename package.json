@@ -63,11 +63,11 @@
 		"remark-math": "^6.0.0",
 		"remark-sectionize": "^2.1.0",
 		"sanitize-html": "^2.18.1",
-		"sass": "^1.106.1",
+		"sass": "^1.107.0",
 		"sharp": "^0.35.5",
 		"svelte": "^5.57.2",
 		"tailwindcss": "^4.3.3",
-		"unist-util-visit": "^5.1.0"
+		"unist-util-visit": "^5.2.0"
 	},
 	"devDependencies": {
 		"@astrojs/check": "^0.9.10",
