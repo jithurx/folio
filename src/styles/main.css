@@ -8,11 +8,43 @@
   [role="button"]:not(:disabled) {
     cursor: pointer;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2 {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  h3,
+  h4 {
+    font-weight: 700;
+  }
+
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+
+  em,
+  i,
+  cite,
+  blockquote {
+    font-style: italic;
+  }
 }
 
 @theme {
   --font-sans:
-    Roboto, sans-serif, ui-sans-serif, system-ui, sans-serif,
+    'Nunito Variable', Nunito, ui-sans-serif, system-ui, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
